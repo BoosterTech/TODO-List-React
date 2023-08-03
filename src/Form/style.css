@@ -1,0 +1,37 @@
+.taskForm {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+@media(max-width: 745px) {
+    .taskForm {
+        grid-template-columns: 1fr;
+    }
+}
+
+.taskForm__input {
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid rgb(221, 215, 215);
+    font-size: 15px;
+}
+
+.taskForm__button {
+    padding: 10px;
+    background-color: rgb(21, 117, 117);
+    color: white;
+    border: 1px solid rgb(9, 99, 99);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.taskForm__button:hover {
+    transform: scale(1.1);
+}
+
+.taskForm__button:active {
+    border: 1px solid black;
+    border-radius: 5%;
+}

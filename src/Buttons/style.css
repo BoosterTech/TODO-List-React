@@ -1,0 +1,41 @@
+.buttons__showHideTasks,
+.buttons__markAllDone {
+    flex-grow: auto;
+    background-color: transparent;
+    border: none;
+    margin-right: 15px;
+    color: rgb(75, 70, 70);
+    transition: color 0.3s;
+}
+
+.buttons__showHideTasks:hover,
+.buttons__markAllDone:hover {
+    color: rgb(0, 0, 0);
+}
+
+.buttons__showHideTasks:click,
+.buttons__markAllDone:click {
+    font-size: x-large;
+}
+
+
+.buttons__markAllDone:disabled,
+.buttons__showHideTasks:disabled{
+    color: rgb(170, 162, 162);
+}
+
+@media(max-width: 745px) {
+
+    .section__header {
+        font-size: medium;
+    }
+
+    .buttons__showHideTasks,
+    .buttons__markAllDone {
+
+        flex-basis: 100%;
+        margin: 10px;
+    }
+
+
+}
