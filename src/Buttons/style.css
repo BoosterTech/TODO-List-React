@@ -1,3 +1,12 @@
+.section__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
 .buttons__showHideTasks,
 .buttons__markAllDone {
     flex-grow: auto;
@@ -20,14 +29,17 @@
 
 
 .buttons__markAllDone:disabled,
-.buttons__showHideTasks:disabled{
+.buttons__showHideTasks:disabled {
     color: rgb(170, 162, 162);
 }
 
 @media(max-width: 745px) {
 
-    .section__header {
-        font-size: medium;
+    .section__buttons {
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 10px;
+        gap: 0;
     }
 
     .buttons__showHideTasks,
@@ -35,7 +47,7 @@
 
         flex-basis: 100%;
         margin: 10px;
+        width: 121px;
+        max-width: 121px;
     }
-
-
 }

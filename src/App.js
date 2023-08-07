@@ -19,10 +19,13 @@ function App() {
             <Header title="Lista zadań" />
             <Section title="Dodaj nowe zadanie"
                 bodyContent={<Form />}
+                headerType="header--top"
             />
             <Section title="Lista zadań"
                 extraHeaderContent={<Buttons tasks={tasks} hideDoneTasksVar={hideDoneTasksVar} />}
                 bodyContent={<Tasks tasks={tasks} hideDoneTasksVar={hideDoneTasksVar} />}
+                id="section--flex"
+                headerType="section__header"
             />
         </Container>
     );

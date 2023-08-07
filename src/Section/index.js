@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.css";
 
-
-const Section = ({ title, extraHeaderContent, bodyContent }) => (
+const Section = ({ title, extraHeaderContent, bodyContent, id, headerType }) => (
     <section className="section">
-        <div className=" section--flex">
-            <h2 className="section__header">{title}</h2>
+        <div className={id}>
+            <h2 className={headerType}>{title}</h2>
             {extraHeaderContent}
         </div>
         {bodyContent}
