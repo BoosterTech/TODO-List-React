@@ -3,35 +3,37 @@
 ## Technologies used:
 - HTML, CSS, JavaScript (including "ECMAScript 6" features)
 - BEM convention
-### Demo: https://boostertech.github.io/Lista-Zadan/
+- React
+
+### Demo: https://boostertech.github.io/TODO-List-React/
 Wide screen:
 
-![wideScreenPreview](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/previewPC.png) 
+![wideScreenPreview](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/previewPC.png) 
 
 Narrow screen ( <768px ):
 
-![narrowScreenPreview](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/previewMobile.png)
+![narrowScreenPreview](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/previewMobile.png)
 
 
 ## Navigating the page
 1. By clicking "***Dodaj zadanie***" button one can add a task to tasks list ("Lista zadań") section:
 
-![addTaskGif](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/addingTask.gif)
+![addTaskGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/addingTask.gif)
 
 2. By clicking "***green square***" button one can mark a task as "**done**", or double-click it to mark it "**undone**":
 
-![markDoneGif](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/markingTaskDoneClick.gif)
+![markDoneGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/markingTaskDoneClick.gif)
 
 , also one can mark all tasks 'Done' by clicking  "***Ukończ wszystkie***" button:
 
-![markDoneGif](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/markingTaskDoneBtn.gif)
+![markDoneGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/markingTaskDoneBtn.gif)
 
 3. Clicking "***Pokaż***" or "***Ukryj***" button one can show as well as hide all accomplished tasks:
 
-![showHideDoneGif](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/hiddingDoneTask.gif)
+![showHideDoneGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/hiddingDoneTask.gif)
 
 4. Clicking "***red square***" will remove a task from the list:
 
-![removeTaskGif](https://github.com/BoosterTech/Lista-Zadan/blob/b5588148e542d727a3aefff437740d42298fb5c3/images/removingTask.gif)
+![removeTaskGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/removingTask.gif)
 
 Enjoy!
