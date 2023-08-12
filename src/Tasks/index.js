@@ -1,12 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const onDelete = (name) => {
-    console.log(`Nazwa zadania do usuniecia: ${name}`);
-}
-
-
-const Tasks = ({ tasks, hideDoneTasksVar }) => (
+const Tasks = ({ tasks, hideDoneTasksVar, removeTask }) => (
     <ul className="tasksList">
         {tasks.map((task, id) => (
             <li key={id} className={`tasksList__item ${hideDoneTasksVar && task.done ? "tasksList__item--hidden" : ""}`}>
@@ -18,9 +13,8 @@ const Tasks = ({ tasks, hideDoneTasksVar }) => (
                 </span>
                 <button
                     className="tasksList__button tasksList__button--remove"
-                    onClick={() => onDelete(task.content)}>🗑️</button>
+                    onClick={() => removeTask(task.id)}>🗑️</button>
             </li>
-
         ))}
     </ul>
 );
