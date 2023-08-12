@@ -2,11 +2,8 @@
     padding: 0 35px;
     margin: 0;
     list-style: none;
-    border-top: 1px solid rgb(221, 215, 215);;
-}
-
-.tasksList__item--hidden {
-    display: none;
+    border-top: 1px solid rgb(221, 215, 215);
+    ;
 }
 
 .tasksList__item {
@@ -18,45 +15,46 @@
     align-items: center;
 }
 
-.tasksList__buttonDone {
+.tasksList__item--hidden {
+    display: none;
+}
+
+.tasksList__button {
     width: 30px;
     height: 30px;
+    transition: .3s;
+}
+
+.tasksList__button--done {
     background-color: rgb(19, 145, 15);
     border: 1px solid rgb(17, 129, 13);
-    transition: .3s;
 }
 
-.tasksList__buttonDone:active {
-    border: 1px solid black;
-    border-radius: 5%;
-}
-
-.tasksList__buttonDone:hover {
-    background-color: rgba(19, 145, 15, 0.849);
-}
-
-.tasksList__buttonRemove {
-    width: 30px;
-    height: 30px;
+.tasksList__button--remove {
     background-color: rgb(238, 69, 69);
     border: 1px solid rgb(248, 53, 53);
-    transition: .3s;
 }
 
-.tasksList__buttonRemove:active {
+.tasksList__button:active {
     border: 1px solid black;
     border-radius: 5%;
 }
 
-.tasksList__buttonRemove:hover {
+.tasksList__button--done:hover {
+    background-color: rgba(19, 145, 15, 0.849);
+    cursor: pointer;
+}
+
+.tasksList__button--remove:hover {
     background-color: rgba(238, 69, 69, 0.863);
+    cursor: pointer;
 }
 
 .tasksList__taskContent {
     word-break: break-word;
 }
 
-.taskContent--done {
+.tasksList__taskContent--done {
     text-decoration: line-through;
 }
 
