@@ -15,6 +15,8 @@ function App() {
 
     const toggleHideDone = () => setHideDoneTasks(hideDoneTasksVar => !hideDoneTasksVar);
 
+//    const addTask=(taskContent)=()=>setTasks(tasks=>{})
+
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id));
     }
@@ -27,6 +29,8 @@ function App() {
             return task;
         }))
     }
+
+    const setAllDone = () => setTasks(tasks => tasks.map(task => ({ ...task, done: true })));
 
     return (
         <Container>
@@ -41,6 +45,7 @@ function App() {
                         tasks={tasks}
                         hideDoneTasksVar={hideDoneTasksVar}
                         toggleHideDone={toggleHideDone}
+                        setAllDone={setAllDone}
                     />}
                 bodyContent={
                     <Tasks
