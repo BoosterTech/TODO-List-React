@@ -14,12 +14,4 @@ const Buttons = ({ tasks, hideDoneTasksVar, toggleHideDone }) => (
     )
 );
 
-// const button = document.querySelector('.buttons__button');
-
-// const hello = (event) => {
-//     console.log("klikniety przycisk", event.target);
-// }
-// button.addEventlistener("click", hello);
-
-
 export default Buttons;

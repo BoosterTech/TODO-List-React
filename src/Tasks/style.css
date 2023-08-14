@@ -23,6 +23,7 @@
     width: 30px;
     height: 30px;
     transition: .3s;
+    color: white;
 }
 
 .tasksList__button--done {

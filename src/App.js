@@ -14,8 +14,18 @@ function App() {
     ])
 
     const toggleHideDone = () => setHideDoneTasks(hideDoneTasksVar => !hideDoneTasksVar);
+
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id));
+    }
+
+    const toggleTaskDone = (id) => {
+        setTasks(tasks => tasks.map(task => {
+            if (task.id === id) {
+                return { ...task, done: !task.done };
+            }
+            return task;
+        }))
     }
 
     return (
@@ -37,6 +47,7 @@ function App() {
                         tasks={tasks}
                         hideDoneTasksVar={hideDoneTasksVar}
                         removeTask={removeTask}
+                        toggleTaskDone={toggleTaskDone}
                     />}
                 id="section__flex"
                 headerType="section__header"
